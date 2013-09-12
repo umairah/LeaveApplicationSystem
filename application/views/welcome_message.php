@@ -39,8 +39,8 @@
 	}
 	
 	p.footer{
-		text-align: right;
-		font-size: 14px;
+		text-align: center;
+		font-size: 12px;
 		border-top: 2px solid #D0D0D0;
 		line-height: 32px;
 		padding: 0 10px 0 10px;
@@ -58,7 +58,7 @@
 <body>
 <marquee>Welcome to Leave Application System!</marquee>
 <br><br>
-<a href = "login.php"><img alt="profile" src="login.jpg" width="100" length="100"></a>
+<a href = "login_page.php"><img alt="profile" src="login.jpg" width="100" length="100"></a>
 <center><img alt="company" src="comp.JPG"></center>
 
 <div id="container">
@@ -76,7 +76,7 @@
 		</p>
 	</div>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
+	<p class="footer">Copyright 2013 <b> Junior Programmer</b></p>
 </div>
 
 </body>
