@@ -10,7 +10,6 @@ class employee_mod extends Model{
 	{
 		$this->load->database();
 		$query = $this->db->get('employee');
-		$query = $this->db->get('category');
 	    return $query->result();
 	}
 }
