@@ -51,6 +51,7 @@
 		margin: 10px;
 		border: 2px solid #1083C5;
 		-webkit-box-shadow: 0 0 8px #D0D0D0;
+		align: center;
 	}
 	</style>
 </head>
