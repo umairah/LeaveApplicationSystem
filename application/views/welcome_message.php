@@ -55,18 +55,20 @@
 	</style>
 </head>
 <body>
-
+<marquee>Welcome to Leave Application System!</marquee>
+<br><br>
 <div id="container">
-	<h1>Welcome to Leave Application System!</h1>
+	<h1>Regulation Of Leave Application</h1>
 
 	<div id="body">
-		<p>Regulation Of Leave Application</p>
 
 		<p>
-			<ol>Emergency leave can't exceed 2 days.</ol>
-			<ol>Maternity leave can't exceed more than 2 months.</ol>
-			<ol>Annual Leave can't exceed as stated in the company regulation.</ol>
-			<ol>User cannot apply leave on the date before.</ol>
+			<ol>
+			<li>Emergency leave can't exceed 2 days.</li>
+			<li>Maternity leave can't exceed more than 2 months.</li>
+			<li>Annual Leave can't exceed as stated in the company regulation.</li>
+			<li>User cannot apply leave on the date before.</li>
+			</ol>
 		</p>
 	</div>
 
