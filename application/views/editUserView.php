@@ -83,62 +83,74 @@
 
 
 <h1> Add User </h1>
+<?php 
 
+    echo form_open('editUser/save', array('name' => 'myform'));
+    ?>
+      
 		<b>
-			 <table border='0'>
- 
+		 <table border='0'>
 	<tr>
 		<td align='left'> Username</td>
 		<td align='left'> :</td>
-		<td align='left'> <input type="text" name="username" size="70" value=""> </td>
+		<td align='left'> <input type="text" name="username" size="70" > </input> </td>
 		
 	</tr>
 	<tr>
 		<td align='left'> Password</td>
 		<td align='left'> :</td>
-		<td align='left'> <input type="password" name="password" size="70" value=""> </td>
+		<td align='left'> <input type="password" name="password" size="70" > </input></td>
 		
 	</tr>
 	<tr>
 		<td align='left'> Full Name</td>
 		<td align='left'> :</td>
-		<td align='left'> <input type="text" name="fullname" size="70" value=""> </td>
+		<td align='left'> <input type="text" name="fullname" size="70" > </input></td>
 		
 	</tr>
 	<tr>
 		<td align='left'> Address</td>
 		<td align='left'> :</td>
-		<td align='left'> <input type="text" name="address" size="70" value=""> </td>
+		<td align='left'> <input type="text" name="address" size="70" > </input></td>
 		
 	</tr>
 	<tr>
 		<td align='left'> Phone Number</td>
 		<td align='left'> :</td>
-		<td align='left'> <input type="text" name="phone" size="70" value=""> </td>
+		<td align='left'> <input type="text" name="phone" size="70" > </input></td>
 		
 	</tr>
 	<tr>
 		<td align='left'> Email</td>
 		<td align='left'> :</td>
-		<td align='left'> <input type="text" name="email" size="70" value=""> </td>
+		<td align='left'> <input type="text" name="email" size="70" > </input></td>
 		
 	</tr>
 	<tr>
 		<td align='left'> Position</td>
 		<td align='left'> :</td>
-		<td align='left'> <input type="text" name="position" size="70" value=""> </td>
+		<td align='left'> <input type="text" name="position" size="70" > </input></td>
+		
+	</tr>
+	<tr>
+		<td align='left'> User Type</td>
+		<td align='left'> :</td>
+		<td align='left'> <input type="text" name="usertype" size="70" > </input></td>
 		
 	</tr>
 	
-</table>
+</table>	
+</b>
 <br>
 
- <input type="submit"  value="    Add   " onclick="JavaScript:alert('Are you sure you want to add this user?')"/></b>
- <input type="reset"  value="   Reset   "/>
+ <input type="submit"  name="submit" value="    Add   " onClick="alert('Data has been saved')"></input>
+ <input type="reset"  value="   Reset   "/></input>
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
 </div>
-
+<?php 
+    
+    echo form_close(); ?>
 </body>
 </html>

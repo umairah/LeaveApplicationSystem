@@ -1,4 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php 
 
 class EditUser extends CI_Controller {
 
@@ -14,7 +14,7 @@ class EditUser extends CI_Controller {
 		if($this->input->post('submit')){
 			$this->editUser_model->process();
 		}
-		redirect('employee');
+		redirect('editUser');
 	}
 
 	/*
