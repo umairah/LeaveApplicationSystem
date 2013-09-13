@@ -52,8 +52,8 @@
 <body>
 <marquee>Welcome to Leave Application System!</marquee>
 <br><br>
-<a href = "category.php"><img alt="profile" src="login.jpg" width="100" length="100"></a>
-<center><img alt="company" src="comp.JPG"></center>
+<a href = "category.php"><img alt="login" src="login.jpg" width="100" length="100"></a>
+<center><img alt="company" src="head.jpg"></center>
 
 <div id="container">
 	<h1>Regulation Of Leave Application</h1>
