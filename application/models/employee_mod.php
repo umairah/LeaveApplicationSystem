@@ -1,16 +1,11 @@
 <?php 
-class employee_mod extends Model{
-
-	function employee_mod()
+class employee_mod extends CI_Model{
+	function getData() 
 	{
-		parent::Model();
-	}
-	
-	function employee_getall()
-	{
-		$this->load->database();
-		$query = $this->db->get('employee');
-	    return $query->result();
+		$this->db->select('*');
+		$this->db->from('Leave_form');
+		$query = $this->db->get();
+		return $query->result();
 	}
 }
 ?>

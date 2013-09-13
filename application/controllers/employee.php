@@ -1,20 +1,17 @@
 <?php
-class employee extends Controller{
-	
-	function employee()
-	{
-		parent::Controller();
-	}
-	
-	function GetAll()
+class employee extends CI_Controller {
+
+	public function index()
 	{
 		$this->load->model('employee_mod');
+		$data['records'] = $this->employee_mod->getData();
+		//echo "<pre>";
+		//print_r ($data['records']);
+		//die();
 		
-		$data['query']=$this->employee_mod->employee_getall();
-		
-		$this->view('employee_report', $data);
+		$this->load->view('employee_report',$data,'');
 	}
-	
 }
 ?>
+
 
