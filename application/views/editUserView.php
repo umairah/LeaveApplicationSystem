@@ -66,16 +66,16 @@
 		
 		 <table border='0'>
   <tr>
-		<th> &nbsp Details &nbsp </td>
-		<th> &nbsp Actions &nbsp </td>
+		<th> &nbsp; Details &nbsp; </td>
+		<th> &nbsp; Actions &nbsp; </td>
 	</tr>
 	<tr>
-		<td align='left'> &nbsp Aminah binti Amin &nbsp</td>
-		<td> &nbsp <input type="submit" value="  Delete  " onclick="JavaScript:alert('Are you sure want to delete this user?')"/> &nbsp </td>
+		<td align='left'> &nbsp; Aminah binti Amin &nbsp;</td>
+		<td> &nbsp; <input type="submit" value="  Delete  " onclick="JavaScript:alert('Are you sure want to delete this user?')"/> &nbsp </td>
 	</tr>
 	<tr>
-		<td align='left'> &nbsp Hasan bin Hussein &nbsp</td>
-		<td> &nbsp <input type="submit" value="  Delete  " onclick="JavaScript:alert('Are you sure want to delete this user?')"/> &nbsp </td>
+		<td align='left'> &nbsp; Hasan bin Hussein &nbsp;</td>
+		<td> &nbsp; <input type="submit" value="  Delete  " onclick="JavaScript:alert('Are you sure want to delete this user?')"/> &nbsp </td>
 	</tr>
 	
 </table>
