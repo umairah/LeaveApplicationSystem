@@ -51,7 +51,7 @@
 			</div>
 			
 			<div id="footer">
-				This Website Is Powered By<b> CodeIgniter </b>
+				<p class="footer">Copyright 2013 by<b> Junior Programmer</b></p>
 			</div>
 			
 		</div>

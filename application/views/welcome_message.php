@@ -70,7 +70,7 @@
 		</p>
 	</div>
 
-	<p class="footer">Copyright 2013 <b> Junior Programmer</b></p>
+	<p class="footer">Copyright 2013 by<b> Junior Programmer</b></p>
 </div>
 
 </body>
