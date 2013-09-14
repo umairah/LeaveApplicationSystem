@@ -6,7 +6,7 @@ class edit_categoryLeave extends CI_Controller {
 	{
 		$this->load->model('editcategorymodel');
 		$data['records'] = $this->editcategorymodel->getData();
-		echo "List Of Category";
+		
 		//echo "<pre>";
 		//print_r ($data['records']);
 		//die();
