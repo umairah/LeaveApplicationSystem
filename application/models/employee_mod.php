@@ -7,6 +7,7 @@ class employee_mod extends CI_Model{
 		$query = $this->db->get();
 		return $query->result();
 		//return
+		//data
 	}
 }
 ?>
