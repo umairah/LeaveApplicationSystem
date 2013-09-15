@@ -100,7 +100,7 @@ echo "</table></center>";
 
 	</div>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
+	<p class="footer"><center>Copyright 2013 by<b> Junior Programmer</b></center></p>
 </div>
 <?php 
     
