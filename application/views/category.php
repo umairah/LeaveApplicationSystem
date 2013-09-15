@@ -71,11 +71,9 @@
 			</ol>
 			
 			<form >
-			ID Category: <input type="text" name="id" value=""><br>
-			Name Category: <input type="text" name="category" value=""><br>
+			ID Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="text" name="id" value=""><br>
+			Name Category: <input type="text" name="category" value=""><br><br>
 			<input type="submit" value="Submit" onclick="JavaScript:alert('Do you want to add type of category?')"/>
-			<input type="submit" value="edit" onclick="JavaScript:alert('Do you want to edit type of category?')"/>
-			<input type="submit" value="delete" onclick="JavaScript:alert('Are you sure to delete the type of category?')"/>
 			</form>
 			
 		</p>
