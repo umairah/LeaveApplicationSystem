@@ -75,7 +75,7 @@ foreach($records as $rec){
 ?>
 
 <br>
-<form method="post" action="backend/categories/form">
+
 <input type="submit"  name="submit" value="Back" onClick=""></input>
 </form>
 
