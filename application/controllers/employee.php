@@ -12,6 +12,19 @@ class employee extends CI_Controller {
 		$this->load->view('employee_report',$data,'');
 	}
 	
+	function redirect(){
+		
+	   $this->load->helper('url');
+	   if (condition == TRUE) {
+		  redirect('welcome');}
+	}
+	//function save(){
+		//$this->load->model('employee_mod');
+		//if($this->input->post('submit')){
+			//$this->employee_mod->process();
+		//}
+		//redirect('welcome');
+	//}
 	//function form()
 	//{
 		//$formSubmit=$this->input->post('submitForm');
