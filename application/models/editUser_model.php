@@ -6,9 +6,12 @@ class EditUser_model extends CI_Model{
 		parent::Model();
 	}
 */
+
+	
+	
 	
 	function process(){
-		$E_Id = $this->input->post('id');
+		
 		$E_Username = $this->input->post('username');
 		$E_Password = $this->input->post('password');
 		$E_FullName = $this->input->post('fullname');
@@ -20,7 +23,8 @@ class EditUser_model extends CI_Model{
 		
 		$data = array(
 				
-				'E_Id'=>$E_Id,
+				
+				'E_Username'=>$E_Username,
 				'E_Password'=>$E_Password,
 				'E_FullName'=>$E_FullName,
 				'E_Address'=>$E_Address,
@@ -32,6 +36,7 @@ class EditUser_model extends CI_Model{
 		$this->db->insert('employee',$data);
 	}
 	
+
 	/*
 	function editUser_getall()
 	{
