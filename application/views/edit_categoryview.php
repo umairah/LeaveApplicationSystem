@@ -43,7 +43,7 @@
 <?php
 echo "<bgcolor = 'red'>";
 echo "<center><font size = '6'>";
-echo "<br><br>List Of Category</br>";
+echo "<br><br>List of Category</br>";
 echo "<table border = '5' cellspacing = '3' cellpadding = '5'>
 <tr><br><br><th>Category ID</th><th>Category Name</th><th>Remarks</th></tr>";
 
