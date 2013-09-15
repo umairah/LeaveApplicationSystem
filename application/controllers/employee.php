@@ -11,6 +11,13 @@ class employee extends CI_Controller {
 		
 		$this->load->view('employee_report',$data,'');
 	}
+	
+	//function form()
+	//{
+		//$formSubmit=$this->input->post('submitForm');
+		//if($formSubmit == 'formSaveNew');
+		//redirect($this->config->item('backend_folder'). '/categories');
+	//}
 }
 ?>
 

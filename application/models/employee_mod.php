@@ -6,6 +6,7 @@ class employee_mod extends CI_Model{
 		$this->db->from('Leave_form');
 		$query = $this->db->get();
 		return $query->result();
+		//return
 	}
 }
 ?>

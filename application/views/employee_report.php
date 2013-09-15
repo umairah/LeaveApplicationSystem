@@ -40,7 +40,7 @@
 
 <?php
 
-echo "<bgcolor = 'red'>";
+// "<bgcolor = 'red'>";
 echo "<center><font size = '6'>";
 echo "<br><br><br>Details of Applicant</br>";
 echo "<table border = '5' cellspacing = '3' cellpadding = '3'>
@@ -70,7 +70,14 @@ foreach($records as $rec){
 }
 
     echo "</table>";
+    
+    
 ?>
+
+<br>
+<form method="post" action="backend/categories/form">
+<input type="submit"  name="submit" value="Back" onClick=""></input>
+</form>
 
 <div id="footer">
 				<p class="footer">Copyright 2013 by<b> Junior Programmer</b></p>
