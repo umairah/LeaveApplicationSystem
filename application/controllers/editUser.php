@@ -5,9 +5,13 @@ class EditUser extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view('editUserView');
 		
+		$this->load->model('editUser_model');
+		$this->load->view('editUserView'); 
 	}
+		
+		
+	
 
 	function save(){
 		$this->load->model('editUser_model');

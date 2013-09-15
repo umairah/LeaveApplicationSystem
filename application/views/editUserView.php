@@ -57,32 +57,11 @@
 <body>
 
 <div id="container">
-	<h1>Delete User Details </h1>
+	<h1>Add User Details </h1>
 
-	<br>
-	
+<br>	
 	<div id="body">
-		<p> <b> List of Employee </b> </p>
-		
-		 <table border='0'>
-  <tr>
-		<th> &nbsp; Details &nbsp; </td>
-		<th> &nbsp; Actions &nbsp; </td>
-	</tr>
-	<tr>
-		<td align='left'> &nbsp; Aminah binti Amin &nbsp;</td>
-		<td> &nbsp; <input type="submit" value="  Delete  " onclick="JavaScript:alert('Are you sure want to delete this user?')"/> &nbsp </td>
-	</tr>
-	<tr>
-		<td align='left'> &nbsp; Hasan bin Hussein &nbsp;</td>
-		<td> &nbsp; <input type="submit" value="  Delete  " onclick="JavaScript:alert('Are you sure want to delete this user?')"/> &nbsp </td>
-	</tr>
 	
-</table>
-<br> <br>
-
-
-<h1> Add User </h1>
 <?php 
 
     echo form_open('editUser/save', array('name' => 'myform'));
@@ -143,7 +122,7 @@
 </b>
 <br>
 
- <input type="submit"  name="submit" value="    Add   " onClick="alert('Data has been saved')"></input>
+ <input type="submit"  name="submit" value="    Add     " onClick="alert('Data has been saved')"></input>
  <input type="reset"  value="   Reset   "/></input>
 	</div>
 
