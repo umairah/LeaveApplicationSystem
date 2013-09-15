@@ -5,9 +5,18 @@ class EditUser extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view('editUserView');
 		
+		$this->load->model('editUser_model');
+		$data['records'] = $this->editUser_model->getData();
+		//echo "<pre>";
+		//print_r ($data['records']);
+		//die();
+		
+		$this->load->view('editUserView',$data,false); 
 	}
+		
+		
+	
 
 	function save(){
 		$this->load->model('editUser_model');
@@ -17,6 +26,13 @@ class EditUser extends CI_Controller {
 		redirect('editUser');
 	}
 
+	function delete(){
+		$this->load->model('editUser_model');
+		if($this->input->post('delete')){
+			$this->editUser_model->bin();
+		}
+		redirect('editUser');
+	}
 	/*
 	function GetAll()
 	{
