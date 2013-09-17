@@ -79,7 +79,7 @@ echo "</table>";
 ?>
 
 <br>
-<form action="PageAdmin">
+<form action="AdminViewCon/redirect">
 <input type="submit"  name="submit" value="Back"></form>
 
 <div id="footer">

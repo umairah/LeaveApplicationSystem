@@ -12,13 +12,11 @@ class AdminViewCon extends CI_Controller {
 		//print_r ($data['records']);
 		//die();
 		
-		$this->load->view('AdminView',$data);
+		$this->load->view('Admin/AdminView',$data);
 	}
 	
-	function redirect(){
-		
-	   $this->load->helper('url');
-	 
+	function redirect()
+	{
 		  redirect('PageAdmin');
 	}
 
