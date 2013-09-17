@@ -51,9 +51,7 @@
 </head>
 <body>
 <marquee>Welcome to Leave Application System!</marquee>
-<br><br>
-<a href = "category.php"><img alt="login" src="login.jpg" width="100" length="100"></a>
-<center><img alt="company" src="head.jpg"></center>
+<br><br><br>
 
 <div id="container">
 	<h1>Regulation Of Leave Application</h1>
@@ -68,6 +66,8 @@
 			<li>User cannot apply leave on the date before.</li>
 			</ol>
 		</p>
+		<br><br><center>
+		<input type="submit"  name="submit" value="Login" onClick=""></input></center>
 	</div>
 
 	<p class="footer">Copyright 2013 by<b> Junior Programmer</b></p>
