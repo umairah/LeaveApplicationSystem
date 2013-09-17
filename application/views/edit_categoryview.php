@@ -55,7 +55,7 @@ echo "<input type='text' name='C_ID' value='$rec->C_ID' disabled='true'></td>";
 echo "<td align = 'center'><input type='text' name='C_Name' value='$rec->C_Name' disabled='true'>";
 echo "</td>";
 echo "<td align = 'center'>";
-echo '<a href = "update_categoryview.php"><input type="submit" name="edit" value="Edit" id="C_ID"/></a>&nbsp;&nbsp;&nbsp;<input type="submit" name="delete" value="Delete"/>';
+echo '<input type="submit" name="edit" value="Edit" id="C_ID"/></a>&nbsp;&nbsp;&nbsp;<input type="submit" name="delete" value="Delete"/>';
 echo '&nbsp;&nbsp;&nbsp;<input type="submit" name="save" value="Save"/>';
 echo "</td>";
 echo "</tr>";
