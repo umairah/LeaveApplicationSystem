@@ -44,12 +44,13 @@
 echo "<center><font size = '6'>";
 echo "<br><br><br>Details of Applicant</br>";
 echo "<table border = '5' cellspacing = '3' cellpadding = '3'>
-<tr><br></br><th>Type Leave</th><th>Applicant Name</th><th>Start Date</th><th>End Date</th><th>Remark</th><th>Status</th></tr>";
+<tr><br></br><th>Type Leave</th><th>Applicant Name</th><th>Start Date</th><th>End Date</th>
+<th>Remark</th><th>Status</th><th>Date Apply</th></tr>";
 
 foreach($records as $rec){
  
 
-	echo "<tr><td align = 'center'>";
+	echo "<tr><td>";
 	echo $rec->Type;
 	echo "</td>";
 	echo "<td>";
@@ -66,6 +67,9 @@ foreach($records as $rec){
 	echo "<td>";
 	echo $rec->Status;
 	echo "</td>";
+	echo "<td>";
+	echo $rec->Date_apply;
+	echo "</td>";
 	echo "</tr>";
 }
 
@@ -77,7 +81,6 @@ foreach($records as $rec){
 <br>
 
 <input type="submit"  name="submit" value="Back" onClick=""></input>
-</form>
 
 <div id="footer">
 				<p class="footer">Copyright 2013 by<b> Junior Programmer</b></p>
