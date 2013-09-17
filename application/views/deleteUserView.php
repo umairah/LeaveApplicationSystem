@@ -98,8 +98,10 @@ echo "</table></center>";
 
 ?>
 
-	</div>
+<br><br>
+<center><input type="submit"  name="submit" value="Back" onClick=""></input></center>
 
+	</div>
 	<p class="footer"><center>Copyright 2013 by<b> Junior Programmer</b></center></p>
 </div>
 <?php 

@@ -122,10 +122,11 @@
 </b>
 <br>
 
- <input type="submit"  name="submit" value="    Add     " onClick="alert('Data has been saved')"></input>
- <input type="reset"  value="   Reset   "/></input>
+ <input type="submit"  name="submit" value="Add" onClick="alert('Data has been saved')"></input>
+ <input type="reset"  value="Reset"/></input>
+ <input type="submit"  name="submit" value="Back" onClick=""></input>
+	
 	</div>
-
 	<p class="footer"><center>Copyright 2013 by<b> Junior Programmer</b></center></p>
 </div>
 <?php 
