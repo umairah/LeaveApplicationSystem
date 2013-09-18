@@ -78,7 +78,7 @@ foreach($records as $rec): ?>
 <?php endforeach; ?>
 
 </table>
-<input type="submit"  name="submit" value="    SAVE    " onClick="alert('Data has been saved')"></input>
+<input type="submit"  name="submit" value=" SAVE " onClick="alert('Data has been saved')"></input>
 
 <br>
 
