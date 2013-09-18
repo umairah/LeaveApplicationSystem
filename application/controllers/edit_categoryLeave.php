@@ -21,5 +21,15 @@ class edit_categoryLeave extends CI_Controller {
 		redirect('edit_categoryLeave');
 	}
 	
+	function save()
+	
+	{
+		$this->load->model('editcategorymodel');
+		if ($this->input->post('submit'))
+		{
+			$this->editcategorymodel->process();
+		}
+		//redirect('PageAdmin');
+	}
 }
 ?>

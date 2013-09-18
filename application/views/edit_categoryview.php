@@ -1,5 +1,19 @@
+
 <html>
 <head>
+<script type="text/javascript" src="/LeaveApplicationSystem/assets/js/jQuery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$('.btn').click(function(){
+		//alert($(this).attr('id'));
+		var id = $(this).attr('id');
+		
+		$('#'+id+'').removeAttr('disabled');
+	});
+	
+});
+</script>
 <meta charset="utf-8">
 <title>Leave Application System</title>
 </head>
@@ -45,16 +59,17 @@
 <?php 
 foreach($records as $rec): ?>
 
-<tr><td align = 'center'>
-	
+<tr><td align = 'center'>	
 
 <?php echo $rec->C_ID; ?> 
 </td>
 <td>
-<input type="text" name="categoryname" value=<?php echo $rec->C_Name; ?> disabled="true">
+<input id="txt<?php echo $rec->C_ID; ?>" type="text" name="categoryname" value=<?php echo $rec->C_Name; ?> disabled="true">
 </td>
 <td align = 'center'>
-<a href = "edit_categoryLeave/UpdateCategory/<?php echo $rec->C_ID; ?>">Edit</a>
+<a href = "javascript:void(0)" onclick="fnedit(txt3)"> </a>
+<button id="txt<?php echo $rec->C_ID; ?>" class="btn" name="txt<?php echo $rec->C_ID; ?>">EDIT
+</button>
 &nbsp;&nbsp;&nbsp;
 <a href = "edit_categoryLeave/delete/<?php echo $rec->C_ID; ?>">Delete</a>
 </td>
@@ -63,7 +78,7 @@ foreach($records as $rec): ?>
 <?php endforeach; ?>
 
 </table>
-
+<input type="submit"  name="submit" value="    SAVE    " onClick="alert('Data has been saved')"></input>
 
 <br>
 
