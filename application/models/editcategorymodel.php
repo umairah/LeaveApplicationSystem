@@ -16,9 +16,7 @@ class editcategorymodel extends CI_Model{
 	
 	function UpdateCategory()
 	{
-		$data = array(
-				'C_Name' => $C_Name,
-		);
+		$data = array( 'C_Name' => $C_Name,);
 		
 		$this->db->where('C_ID', $C_ID);
 		$this->db->update('category', $data);
@@ -29,14 +27,12 @@ class editcategorymodel extends CI_Model{
 		// WHERE id = $id
 	}
 	
- function process(){
-                    $C_ID = $this->input->post('id');
-                    $C_Name = $this->input->post('category');
-                    $data = array(
-                        'C_ID'=>$C_ID,
-                        'C_Name'=>$C_Name,
-                    );
-                    $this->db->insert('category',$data);    
+ function process($id="",$data=""){
+                   
+                   $this->db->where('C_ID', $id);
+                   $query= $this->db->update('category',$data); 
+                   return $query;
+                       
             }//end of simpan        
         }
 ?>

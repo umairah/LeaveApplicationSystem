@@ -27,9 +27,29 @@ class edit_categoryLeave extends CI_Controller {
 		$this->load->model('editcategorymodel');
 		if ($this->input->post('submit'))
 		{
-			$this->editcategorymodel->process();
+			$dataNAME=$this->input->post('categoryname');
+			$dataID=$this->input->post('categoryid');
+			//print_r($data);
+			//echo "<br/>";
+			//print_r($dataID);
+			//die();
+			for($i=0; $i<sizeof($dataNAME); $i++)
+			{
+				//echo $data[$i];
+				//echo $dataID[$i];
+				$data = array(
+						
+						'C_Name'=>$dataNAME[$i],
+				) ;
+				$status=$this->editcategorymodel->process($dataID[$i],$data);
+				//echo $status;
+				$this->session->set_flashdata('status', $status);
+				//echo $this->session->flashdata('status');
+				//die();
+			}
+			//$this->editcategorymodel->process($data);
 		}
-		//redirect('PageAdmin');
+		redirect('edit_categoryLeave');
 	}
 }
 ?>

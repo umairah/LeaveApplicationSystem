@@ -8,8 +8,11 @@ $(document).ready(function(){
 	$('.btn').click(function(){
 		//alert($(this).attr('id'));
 		var id = $(this).attr('id');
+		//var id = $(this).attr('id');
 		
-		$('#'+id+'').removeAttr('disabled');
+		$('#txt'+id+'').removeAttr('disabled');
+		$('#cid'+id+'').removeAttr('disabled');
+		event.preventDefault();
 	});
 	
 });
@@ -54,22 +57,23 @@ $(document).ready(function(){
 <body>
 <center><font size = '6'>
 <br><br>List of Category</br>
+<form name="form1" id="form1" action="edit_categoryLeave/save" method="post">
 <table border = '5' cellspacing = '3' cellpadding = '5'>
 <tr><br><br><th>Category ID</th><th>Category Name</th><th>Remarks</th></tr>
 <?php 
 foreach($records as $rec): ?>
 
 <tr><td align = 'center'>	
-
+<input type="text" id="cid<?php echo $rec->C_ID; ?>" name="categoryid[]" value="<?php echo $rec->C_ID; ?>" disabled="true" />
 <?php echo $rec->C_ID; ?> 
 </td>
 <td>
-<input id="txt<?php echo $rec->C_ID; ?>" type="text" name="categoryname" value=<?php echo $rec->C_Name; ?> disabled="true">
+<input id="txt<?php echo $rec->C_ID; ?>" type="text" name="categoryname[]" value=<?php echo $rec->C_Name; ?> disabled="true">
 </td>
 <td align = 'center'>
 <a href = "javascript:void(0)" onclick="fnedit(txt3)"> </a>
-<button id="txt<?php echo $rec->C_ID; ?>" class="btn" name="txt<?php echo $rec->C_ID; ?>">EDIT
-</button>
+<input type="button" id="<?php echo $rec->C_ID; ?>" class="btn" name="txt<?php echo $rec->C_ID; ?>" value="EDIT"/>
+
 &nbsp;&nbsp;&nbsp;
 <a href = "edit_categoryLeave/delete/<?php echo $rec->C_ID; ?>">Delete</a>
 </td>
@@ -78,14 +82,23 @@ foreach($records as $rec): ?>
 <?php endforeach; ?>
 
 </table>
-<input type="submit"  name="submit" value=" SAVE " onClick="alert('Data has been saved')"></input>
+<input type="submit"  name="submit" value=" SAVE "></input>
+
 
 <br>
+<?php
+if ($this->session->flashdata("status"))
+{ 
+if ($this->session->flashdata("status")==1)
+{
+	echo "<script>alert('Data succesfully saved')</script>";
+}
+else 
+	echo "<script>alert('Data cannot be saved')</script>";
+}	
+?>
 
-
-<div id="footer">
-				<p class="footer">Copyright 2013 by<b> Junior Programmer</b></p>
-			</div>
+<div id="footer"><p class="footer">Copyright 2013 by<b> Junior Programmer</b></p></div>
 			
 </body>
 </html>
